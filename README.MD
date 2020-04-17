@@ -16,6 +16,8 @@ Base settings:
 * login: ***1234***
 * password: ***1234***
 
+Also config mail account for email sending
+
 IMPORTANT! SOME OF LOADED MODULES WERE CHANGED
 
 DO NOT REINSTALL SOME MODULES
