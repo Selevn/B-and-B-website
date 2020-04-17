@@ -1,0 +1,56 @@
+.card
+{
+    margin: 1rem;
+    border: 1px solid #dfdfdf;
+    background-color: #ffffff;
+}
+.fa-shopping-cart,.fa-ban
+{
+    float: right;
+    font-size: 1.4rem;
+    padding: .4rem;
+    border-radius: 2rem;
+    border: 2px solid #FFB71880;
+    background-color: #00000000;
+    transition: .3s;
+}
+.fa-ban
+{
+    width:2.32rem;
+    height:2.32rem;
+}
+.fa-shopping-cart:hover,.fa-ban:hover
+{
+    cursor: pointer;
+    background-color: #FFB71880;
+}
+.price
+{
+    font-size: 1.4rem;
+}
+.card-body
+{
+    height:18rem;
+}
+.good_count_input
+{
+    float:right;
+    margin-right: .1rem;
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    background-color: #e7e7e7;
+}
+.card
+{
+    opacity: 30%;
+    transform: scale(.92,.92);
+    animation: goods_comes .3s ease-in;
+    animation-fill-mode: forwards;
+}
+@keyframes goods_comes {
+100%
+{
+    opacity: 100%;
+    transform: scale(1,1);
+}
+}

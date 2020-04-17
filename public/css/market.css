@@ -1,0 +1,128 @@
+.title_box
+{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.title_content
+{
+    text-align: center;
+    font-size: 2.4rem;
+}
+.search_box
+{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.search_content
+{
+    text-align: center;
+    font-size: 1.4rem;
+
+}
+.submit
+{
+    border-radius: 2rem;
+    border: 2px solid #FFB71880;
+    background-color: #00000000;
+    font-size: 1.15rem;
+    padding: .25rem 1.05rem;
+    transition: .3s;
+}
+.submit:hover
+{
+    border: 2px solid #FFB718ff;
+}
+
+.mail
+{
+    text-align: center;
+}
+
+.search_field
+{
+    width:16rem;
+    border-radius: 2rem;
+    border: 2px solid #FFB71880;
+    background-color: #00000000;
+    font-size: 1.75rem;
+    padding: .35rem 1.05rem;
+    transition: .3s;
+}
+.search_field:focus
+{
+    border: 2px solid #FFB718ff;
+}
+.fa-search
+{
+    border-radius: 2rem;
+    border: 2px solid #FFB71880;
+    background-color: #00000000;
+    font-size: 1.8rem;
+    padding: .6rem;
+}
+.fa-search:hover
+{
+    cursor: pointer;
+    background-color: #FFB71880;
+}
+
+.sort_button
+{
+    margin-top: .37rem;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+.total_cost, .goods_count
+{
+    font-size: 1.5rem;
+}
+.good_count_input
+{
+    background-color: #ffffff80;
+    border:none;
+    width:4rem;
+    margin-left: .3rem;
+    text-align: right;
+}
+a
+{
+    color:black;
+}
+a:hover
+{
+    color: rgba(223, 223, 223);
+}
+.sort_button
+{
+    transition: .25s linear 0s;
+}
+.sort_button:hover
+{
+    background-color: rgb(255, 197, 24);
+    box-shadow: 2px 3px 1px 1px #c4c4c4;
+    border-radius: 1.5rem 0 0 0;
+}
+
+.submit:hover
+{
+    background-color: #FFB718;
+}
+.card
+{
+    transition: box-shadow .25s linear 0s;
+}
+.card:hover
+{
+
+    box-shadow: 2px 3px 5px 2px #FFB71880;
+}
+.search_but
+{
+    transition: .25s linear 0s;
+}
+.search_but:hover
+{
+    background-color: #FFB718;
+}

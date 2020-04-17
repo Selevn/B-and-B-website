@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>B&B|Shop</title>
+    <meta name = "viewport" content = "width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel = "stylesheet" href="/bs/css/bootstrap.min.css">
+    <link rel = "stylesheet" href="/bs/css/bootstrap-social.css">
+    <link rel = "stylesheet" href="/bs/css/animate.css">
+    <link rel = "stylesheet" href="/bs/css/fa.css">
+    <link rel = "stylesheet" href="/css/market.css">
+    <link rel = "stylesheet" href="/css/shop_card_style.css">
+    <style>
+        @font-face {
+            font-family: Rare;
+            src: url(fonts/18842.otf);
+        }
+    </style>
+    <title>B&B|Сайт строительной компании</title>
+
+    <script src="/bs/js/jquery.min.js"></script>
+    <script src="/bs/js/bootstrap.min.js"></script>
+    <script src="/bs/js/wow.min.js"></script>
+
+</head>
+<body>
+<div class="container-fluid sticky-top nav_box" style="background-color: #ffb718;">
+    <div class="container-xl">
+        <nav id="menu" class="navbar navbar-light py-0">
+            <div><a class="navbar-brand pr-3" href="/">B&B</a>
+            <a class="navbar-brand" href="/">Назад</a></div>
+            <!--todo: menu icon fix-->
+            <div class="justify-content-end" id="navbarNav">
+                    <div class = "shopping"><a class="basket_a" href=""><span class=" fa fa-shopping-cart buy"></span></a><span class = "total_cost">0</span><span style="font-size: 1.5rem">$</span></div>
+            </div>
+        </nav>
+    </div>
+</div>
+<div class="container-fluid px-0">
+    <div class="container-fluid px-0 title_box" style="background-color: #475b9600">
+        <div class="container-sm title_content" style="background-color: #1d354600">
+            Магазин
+        </div>
+    </div>
+    <div class="container-fluid px-0 search_box">
+        <div class="container-sm search_content">
+            <input  class="search_field" id="search_goods" maxlength="15">
+            <span class="fa fa-search search_but submit" onclick="find()"></span>
+        </div>
+    </div>
+    <div class="container-fluid goods_tools_box" style="min-height: 3rem; background-color: #DFDFDF">
+        <div class="container-sm goods_tools_content" style="min-height: 3rem; text-align: center">
+            <div class = "row">
+            <div class = "col sort_button cost_sort">Цена</div>
+            <div class = "col sort_button name_sort">Название</div>
+            <div class = "col sort_button cat_sort">Категория</div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid goods_box" style="background-color: #fefaf4">
+        <div class="container-sm goods_content p-5">
+            <div class = "row goods_row">
+                {{#each goods}}
+                <div class="col-lg-4 card_holder">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-id" style="display:none">{{this.id}}</div>
+                    <div class="card-title"><h5 >{{this.name}}</h5></div>
+                        <h6 class="card-subtitle mb-2 text-muted">{{this.category}}</h6>
+                        <hr>
+                        <p class="card-text">{{this.description}}</p>
+
+                    </div>
+                    <div class="card-footer"><span class="price" id="{{this.id}}_price">{{this.price}}$</span><span class="fa fa-shopping-cart buy add_good_in_backet " id="{{this.id}}_good"></span><input value = "1" class="good_count_input" id="{{this.id}}_count" type = "number" maxlength="4" max="3000" min="1"></div>
+                </div>
+            </div>
+                {{/each}}
+    </div>
+</div>
+        <script src="js/shop_assistant.js"></script>
+        <script>
+            $(".search_field").on("keypress",function (e) {
+                if(e.which === 13)
+                    find();
+            })
+        </script>
+</body>
+</html>

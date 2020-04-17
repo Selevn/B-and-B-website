@@ -1,0 +1,35 @@
+
+/*navbar background*/
+nav
+{
+ padding: 0;
+ background-color: #FFB718;
+ font-size: 1.25rem;
+}
+.navbar-brand
+{
+ font-size: 1.25rem;
+}
+
+/*a-links-style*/
+.navbar-light .navbar-nav .nav-link
+{
+ color: black;
+}
+.navbar-light .navbar-nav .nav-link:hover
+{
+color: #555555;
+}
+
+.nav-pills .nav-link.active
+{
+ background-color:rgba(255, 227, 106, 0);
+ animation: show_selected_menu .4s linear;
+ animation-fill-mode:forwards;
+}
+@keyframes show_selected_menu {
+
+ 100% {
+  background-color: rgba(255, 227, 106, 255);
+ }
+}

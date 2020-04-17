@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Добавление Товара</title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        input,textarea
+        {
+            margin-top:15px;
+        }
+        *
+        {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body align="center">
+<h1>Добавление Товара</h1>
+<form style="margin-bottom:15px;" action="/admin/addGood" method="POST">
+    <label>Категория</label><br>
+    <input name="cathegory" /><br><br>
+    <label>Имя</label><br>
+    <input name="name" /><br><br>
+    <label>Описание</label><br>
+    <textarea name="description"></textarea><br>
+    <label>Цена</label><br>
+    <input name="price" /><br><br>
+    <input type="submit" value="Отправить" />
+</form>
+<a href="/admin">К списку Товаров</a>
+</body>
+<html>

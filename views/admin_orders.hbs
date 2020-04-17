@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Administrator</title>
+    <link rel = "stylesheet" href="/bs/css/bootstrap.min.css">
+    <link rel = "stylesheet" href="/bs/css/bootstrap-social.css">
+    <script src="/bs/js/jquery.min.js"></script>
+    <script src="/bs/js/bootstrap.min.js"></script>
+</head>
+<body>
+<a href="/admin">Назад</a>
+<a style="float:right" href="/admin/logout">Выйти</a>
+
+<table class="table">
+<thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Email</th>
+      <th scope="col">Data</th>
+      <th scope="col">Reg_Date</th>
+      <th scope="col">Approved</th>
+    </tr>
+  </thead>
+    {{#each goods}}
+        <tr><th scope="row">{{this.id}}</th><td>{{this.mail}}</td><td>{{this.data}}</td><td>{{this.register_date}}</td><td>{{this.approved}}</td><td>
+            <form action="/admin/orders/delete/{{this.id}}" method="POST" style="display:inline;">
+                <input type="submit" value="Delete" />
+            </form>
+        </td></tr>
+    {{/each}}
+</table>
+</body>
+</html>
+
