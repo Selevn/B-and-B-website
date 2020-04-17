@@ -13,8 +13,8 @@ module.exports.mail_settings = {
     port: 465,
     secure: true, //true --> will use ssl
     auth: {
-        user: '',
-        pass: ''
+        user: '',//ENTER USERNAME
+        pass: ''//ENTER PASSWORD
     }
 };
 //SQL SETTINGS
