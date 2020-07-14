@@ -1,11 +1,10 @@
 //launch for creating db
 const mysql = require("mysql2");
 
-const connection = mysql.createConnection({
+var connection = mysql.createConnection({
     host: "localhost",
     user: "root",
-    password: "",
-    database: "goodsDB"
+    password: ""
 });
 
 connection.connect();
@@ -15,6 +14,15 @@ connection.query("CREATE DATABASE goodsDB",
         if(err) console.log(err);
         else console.log("База данных создана");
     });//category, name, description, price
+
+connection.changeUser({
+    database : 'goodsDB'
+}, (err) => {
+    if (err) {
+        console.log('Error in changing database', err);
+        return;
+    }
+})
 
 var sql = `create table if not exists goods(
   id int primary key auto_increment,
