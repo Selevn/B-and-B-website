@@ -7,18 +7,23 @@ This project demonstrates my knowleges in
 4. Autorisation (passport module)
 5. And another less important
 
-For using project first of all launch CreateDB.js via `node CreateDB.js`
+For using project first of all run your SQL server, create db **goodsdb**
+
+You can create empty table via `node CreateDB.js` or use table with my data
+after importing it from `goodsdb.sql`
+
 At the next step launch server by `node server.js`
 before this you can configure some values in `settings.js`
 
 Admin access is on `url/admin/login`
+
 Base settings: 
 * login: ***1234***
 * password: ***1234***
 
 Also config mail account for email sending
 
-IMPORTANT! SOME OF LOADED MODULES WERE CHANGED
+IMPORTANT! SOME OF LOADED MODULES WERE CHANGED (I've fixed this bad practice in my next projects)
 
 DO NOT REINSTALL SOME MODULES
 
