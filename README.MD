@@ -7,6 +7,8 @@ This project demonstrates my knowleges in
 4. Autorisation (passport module)
 5. And another less important
 
+Video demonstration allowed on <https://vk.com/video157498119_456239222>
+
 For using project first of all run your SQL server, create db **goodsdb**
 
 You can create empty table via `node CreateDB.js` or use table with my data
